@@ -18,6 +18,12 @@ body {
   scrollbar-width: none;
 }
 
+.site-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     height: 110px;
     display: flex;
@@ -43,6 +49,22 @@ header a {
 header a:hover {
     color: #161616;
     text-decoration: underline;
+}
+
+main {
+    margin-bottom: 84px;
+}
+
+footer {
+    background-color: #161616;
+    color: #AAAAAA;
+    height: 74px;
+    margin-top: auto;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
 }
 
 .link-button {
@@ -235,6 +257,10 @@ i[class*='van-type-'] {
     text-decoration: none;
 }
 
+.van-detail-container .back-button:visited {
+    
+}
+
 .van-detail-container .back-button span {
     text-decoration: underline;
 }
@@ -274,8 +300,6 @@ i[class*='van-type-'] {
     color: white;
     font-size: 1.125rem;
 }
-
-/* Host Pages */
 
 .host-nav {
     display: flex;
