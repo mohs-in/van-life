@@ -1,9 +1,13 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Home from '../components/Home'
-import About from '../components/About.jsx'
-import Vans from '../components/Vans.jsx'
-import VanDetail from '../components/VanDetail.jsx'
-import Layout from '../components/Layout.jsx'
+import Home from './components/Home.jsx'
+import About from './components/About.jsx'
+import Layout from './components/Layout.jsx'
+import Vans from './pages/Vans/Vans.jsx'
+import VanDetail from './pages/Vans/VanDetail.jsx'
+import Host from './pages/Host/Host'
+import HostIncome from './pages/Host/HostIncome'
+import HostReviews from './pages/Host/HostReviews.jsx'
+
 import './App.scss'
 import './server.js'
 
@@ -18,6 +22,9 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/vans' element={<Vans />} />
           <Route path='/vans/:id' element={<VanDetail />}/>
+          <Route path='/host' element={<Host />} />
+          <Route path='/host/income' element={<HostIncome />} />
+          <Route path='/host/reviews' element={<HostReviews />} />
         </Route>
       </Routes>
     </BrowserRouter>
