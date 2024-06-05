@@ -1,8 +1,10 @@
+import { Outlet } from 'react-router-dom'
 
 export default function Host() {
     return (
         <>
-            <h1>host page goes here...</h1>
+            <h1>dashboard page goes here...</h1>
+            <Outlet />
         </>
     )
 }

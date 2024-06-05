@@ -4,6 +4,7 @@ import About from './components/About.jsx'
 import Layout from './components/Layout.jsx'
 import Vans from './pages/Vans/Vans.jsx'
 import VanDetail from './pages/Vans/VanDetail.jsx'
+import Host from './pages/Host/Host'
 import HostDashboard from './pages/Host/Dashboard.jsx'
 import HostIncome from './pages/Host/HostIncome'
 import HostReviews from './pages/Host/HostReviews.jsx'
@@ -17,14 +18,21 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/vans' element={<Vans />} />
-          <Route path='/vans/:id' element={<VanDetail />}/>
-          <Route path='/host' element={<HostDashboard />} />
-          <Route path='/host/income' element={<HostIncome />} />
-          <Route path='/host/reviews' element={<HostReviews />} />
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='about' element={<About />} />
+
+          <Route path='vans'>
+            <Route index element={<Vans />} />
+            <Route path=':id' element={<VanDetail />}/>
+          </Route>
+          
+          <Route path='host' element={<Host />}>
+            <Route index element={<HostDashboard />} />
+            <Route path='income' element={<HostIncome />} />
+            <Route path='reviews' element={<HostReviews />} />
+          </Route>
+          
         </Route>
       </Routes>
     </BrowserRouter>
