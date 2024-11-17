@@ -145,6 +145,10 @@ footer {
 
 
 /*** ABOUT PAGE ***/
+.about-page-container {
+    width: 100%;
+}
+
 .about-hero-image {
     max-width: 100%;
 }
@@ -383,8 +387,17 @@ i[class*='van-type-'] {
         width: 70%;
     }
 
+    .about-hero-image {
+        margin-left: 1.4em;
+        border-radius: 5px;
+    }
+
     .home-container {
         a { width: 15em; }
         p { width: 40em; }
+    }
+
+    .about-page-cta {
+        margin-right: 3.3em;
     }
 }
