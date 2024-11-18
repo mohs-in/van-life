@@ -378,6 +378,41 @@ i[class*='van-type-'] {
     margin-block: 10px;
 }
 
+.host-listed-vans-div {
+    padding: 0 1em;
+
+    .host-listed-van {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        color: #161616;
+        text-decoration: none;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+        
+        .host-listed-van-desc {
+            margin-left: 1em;
+            h3 {
+                margin: 0;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+            p {
+                margin: .4em 0 0 0;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
 @media (min-width: 1024px) {
     #van-detail-description {
         width: 40em;

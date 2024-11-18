@@ -1,7 +1,7 @@
 export default function HostVanDetail() {
     return (
         <>
-            <h1>host van detail page</h1>
+            <h3>host van detail page</h3>
         </>
     )
 }
