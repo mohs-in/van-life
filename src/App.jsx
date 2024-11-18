@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, Outlet} from 'react-router-dom'
 import Home from './components/Home.jsx'
 import About from './components/About.jsx'
 import Layout from './components/Layout.jsx'
@@ -31,8 +31,10 @@ function App() {
             <Route index element={<HostDashboard />} />
             <Route path='income' element={<HostIncome />} />
             <Route path='reviews' element={<HostReviews />} />
-            <Route path='vans' element={<HostVans />} />
-            <Route path='vans/:id' element={<HostVanDetail />} />
+            <Route path='vans' element={<Outlet />}>
+              <Route index element={<HostVans />} />
+              <Route path=':id' element={<HostVanDetail />} />
+            </Route>
           </Route>
           
         </Route>
