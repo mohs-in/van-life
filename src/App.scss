@@ -325,13 +325,15 @@ i[class*='van-type-'] {
 
 .host-nav {
     display: flex;
+    justify-content: start;
+    margin-left: .5em;
 }
 
 .host-nav a {
     text-decoration: none;
     color: #4D4D4D;
     font-weight: 500;
-    padding: 25px 20px;
+    padding: 25px 10px;
 }
 
 .host-nav a:hover {
@@ -416,16 +418,13 @@ i[class*='van-type-'] {
 .back-button {
     margin-top: 2em;
     span {
-        text-decoration: underline;
         color: #201F1D;
-        line-height: 1.1;
-        font-size: 1rem;
         font-weight: 600;
     }
 }
 
 .host-van-detail-container {
-    margin-top: 2em;
+    margin: 1em;
     padding: 1em;
     background-color: #fff;
 
@@ -434,16 +433,26 @@ i[class*='van-type-'] {
         flex-direction: row;
 
         img {
-            width: 160px;
+            width: 140px;
+            height: 150px;
             border-radius: 10px;
         }
         .host-van-detail-info {
-            padding-left: 1.5em;
+            padding-left: 1em;
             display: flex;
             flex-direction: column;
+            .vantype-w {
+                margin-top: 1em;
+                height: 2em;
+                padding: .25em 1em;
+                width: 5.5em;
+                border-radius: 5px;
+                background-color: #E17654;
+                color: #FFEAD0;
+            }
             h3 { 
                 font-size: 1.5rem; 
-                margin: 1em 0 .5em 0;
+                margin: .75em 0 .25em 0;
             }
             h4 { 
                 font-size: 1rem; 
@@ -453,6 +462,9 @@ i[class*='van-type-'] {
                 font-weight: 800;
             }
         }
+    }
+    .van-detail-container-content {
+        padding: 0 .65em;
     }
 }
 
