@@ -25,23 +25,22 @@ body {
 }
 
 header {
-    height: 6em;
+    height: 3.5em;
     display: flex;
     align-items: center;
     padding-block: 10px;
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.8); /* Transparent background */
-    // background: #d2cec9;
-    backdrop-filter: blur(5px); /* Apply blur to the background */
-    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition for color and blur */
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
     z-index: 1000;
 }
 
 header.scrolled {
-    background: rgba(0, 0, 0, 0.7); /* Darker background on scroll */
-    backdrop-filter: blur(10px); /* Increased blur on scroll */
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px); 
 }
 
 header .site-logo {
@@ -72,7 +71,7 @@ main {
 footer {
     background-color: #161616;
     color: #AAAAAA;
-    height: 74px;
+    height: 3em;
     display: flex;
     flex-shrink: 0;
     justify-content: center;
@@ -441,6 +440,9 @@ i[class*='van-type-'] {
             padding-left: 1.5em;
             display: flex;
             flex-direction: column;
+            i {
+                max-width: fit-content;
+            }
             h3 { 
                 font-size: 1.5rem; 
                 margin: 1em 0 .5em 0;
@@ -457,6 +459,14 @@ i[class*='van-type-'] {
 }
 
 @media (min-width: 1024px) {
+    header {
+        height: 6em;
+    }
+
+    footer {
+        height: 4.5em;
+    }
+
     #van-detail-description {
         width: 40em;
     }
