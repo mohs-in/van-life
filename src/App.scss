@@ -31,7 +31,7 @@ header {
     padding-block: 10px;
     position: fixed;
     top: 0;
-    width: 100%;
+    max-width: 100%;
     background: rgba(255, 255, 255, 0.8); 
     backdrop-filter: blur(5px);
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
