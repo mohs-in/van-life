@@ -31,7 +31,6 @@ header {
     padding-block: 10px;
     position: fixed;
     top: 0;
-    max-width: 100%;
     background: rgba(255, 255, 255, 0.8); 
     backdrop-filter: blur(5px);
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
@@ -470,9 +469,22 @@ i[class*='van-type-'] {
     }
 }
 
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+        nav {
+            a {
+                padding: 0 .5em;
+                margin: 0 .75em 0 0;
+            }
+        }
+    }
+}
+
 @media (min-width: 1024px) {
     header {
         height: 6em;
+        width: 100%;
     }
 
     footer {

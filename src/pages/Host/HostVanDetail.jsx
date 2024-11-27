@@ -26,7 +26,7 @@ export default function HostVanDetail() {
     return (
         <section style={{marginTop: '2em'}}>
             <span style={{padding: '1em'}}>&larr;</span>
-            <Link to='..' className='back-button' style={{textUnderlineOffset: '2px'}}> <span>Back to all Vans</span></Link>
+            <Link to='..' className='back-button' style={{textUnderlineOffset: '2px', color: '#161616'}}> <span>Back to all Vans</span></Link>
             <div className='host-van-detail-container'>
                 <div className='host-van-detail'>
                     <img src={currentVan.imageUrl} alt="" />
